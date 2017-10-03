@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-	</head>
-	<body>
 
-	</body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>File Metadata Microservice API</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
+	<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const file = document.getElementById("file");
+		file.addEventListener("change", () => {
+			if(file.files.length > 0) {
+				document.getElementById('file-name').innerHTML = file.files[0].name;
+			}
+		});
+	});
+	</script>
+</head>
+
+<body>
+	<section class="section">
+		<div class="container">
+
+			<form method="post" action="/api/" enctype="multipart/form-data">
+				<div class="field file has-name is-fullwidth">
+					<label class="file-label">
+					<input class="file-input" type="file" name="file" id="file">
+					<span class="file-cta">
+						<span class="file-icon">
+							<i class="fa fa-upload">&nbsp;</i>
+						</span>
+						<span class="file-label">
+							Choose a file...
+						</span>
+					</span>
+
+					<span class="file-name" id="file-name"></span>
+					</label>
+				</div>
+
+				<div class="field">
+					<div class="control">
+						<button class="button is-primary">Submit</button>
+					</div>
+				</div>
+			</form>
+
+		</div>
+	</section>
+
+</body>
+
 </html>
