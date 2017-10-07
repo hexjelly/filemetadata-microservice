@@ -3,8 +3,14 @@
 
 freeCodeCamp challenge: File Metadata Microservice
 
-## Install and usage
+## About
+Uses [Express](https://www.npmjs.com/package/express) with [Multer](https://www.npmjs.com/package/multer) middleware to handle form uploads.
 
+[Bulma](http://bulma.io/) CSS framework for a simple upload form.
+
+[Ava](https://github.com/avajs/ava) with [Supertest](https://github.com/visionmedia/supertest) for testing. [XO](https://github.com/sindresorhus/xo) for linting.
+
+## Install and usage
 ```shell
 git clone https://github.com/hexjelly/filemetadata-microservice.git
 cd filemetadata-microservice
@@ -17,5 +23,4 @@ npm run start
 ```
 
 ## License
-
 Apache-2.0
