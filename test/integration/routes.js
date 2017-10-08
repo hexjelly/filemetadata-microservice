@@ -21,7 +21,7 @@ test('/api/: valid data returns 200 and json (1/2)', async t => {
 	t.is(res.status, 200);
 	t.is(res.type, 'application/json');
 	t.falsy(res.body.error);
-	t.is(res.body.size, 30);
+	t.is(res.body.size, 29);
 });
 
 test('/api/: valid data returns 200 and json (2/2)', async t => {
@@ -30,7 +30,7 @@ test('/api/: valid data returns 200 and json (2/2)', async t => {
 	t.is(res.status, 200);
 	t.is(res.type, 'application/json');
 	t.falsy(res.body.error);
-	t.is(res.body.size, 68);
+	t.is(res.body.size, 62);
 });
 
 test('/api/: invalid data returns 400 and json with error', async t => {
