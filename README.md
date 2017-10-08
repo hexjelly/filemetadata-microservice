@@ -10,6 +10,8 @@ Uses [Express](https://www.npmjs.com/package/express) with [Multer](https://www.
 
 [Ava](https://github.com/avajs/ava) with [Supertest](https://github.com/visionmedia/supertest) for testing. [XO](https://github.com/sindresorhus/xo) for linting.
 
+[Demo link](https://hj-filemetadata.herokuapp.com/)
+
 ## Install and usage
 ```shell
 git clone https://github.com/hexjelly/filemetadata-microservice.git
